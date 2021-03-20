@@ -7,9 +7,10 @@ Created using **Wit.Ai, NPL, AI, APIs, Node.JS, &amp; VoiceFlow**
 ## Usage
 
 You can ask the consultant things such as **"I feel sick"** or **"I have a headache"** or **"I minor fever. should I be worried?"**
-If you decide to take the Self-Assessment test, you will be asked a series of questions that were taken from the Provincial Covid-19 Self-Assessment Test. Your answers will be 
-stored with the correct intention using Wit.ai, and the program will decide what to advice you to do according to the Official Provincial Test. At the end, the assessment will 
-be sent to the user's email. This was implemented with Node.js & API.
+If you decide to take the Self-Assessment test, you will be asked a series of questions that were taken from the Provincial Covid-19 Self-Assessment Test.
+
+Your answers will be stored with the correct intention using Wit.ai, and the program will decide what to advice you to do according to the Official Provincial Test. At the end, 
+the assessment will be sent to the user's email. This was implemented with Node.js & API.
 
 [Project Link](https://creator.voiceflow.com/prototype/60030f0b8cc35e0006e1b0ae)
 
