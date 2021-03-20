@@ -1,0 +1,4411 @@
+{
+  "project": {
+    "_id": "60030f0c9e0496001bbba952",
+    "name": "Covid Consultant",
+    "teamID": "8ekYVlAjNv",
+    "devVersion": "60030f0b8cc35e0006e1b0ae",
+    "platform": "alexa",
+    "platformData": {
+      "products": []
+    },
+    "members": [],
+    "image": "",
+    "creatorID": 53720
+  },
+  "version": {
+    "_id": "60030f0b8cc35e0006e1b0ae",
+    "name": "Initial Version",
+    "projectID": "60030f0c9e0496001bbba952",
+    "variables": [
+      "confidence",
+      "user_name",
+      "user_age",
+      "diff_breath",
+      "ches_pain",
+      "input_age",
+      "intent",
+      "lose_consc",
+      "out_canada",
+      "close_contact",
+      "neww",
+      "danger",
+      "danger1",
+      "init_danger",
+      "app",
+      "confused",
+      "chills_conf",
+      "chills_confidence",
+      "cough_confidence",
+      "swo_confidence",
+      "dig_confidence",
+      "tired_confidence",
+      "fever_confidence",
+      "head_confidence",
+      "smell_confidence",
+      "question_input",
+      "mus_confidence",
+      "nose_confidence",
+      "sore_confidence",
+      "answer_output",
+      "fever",
+      "chills",
+      "sore_throat",
+      "runny_nose",
+      "muscle_ache",
+      "smell_impairment",
+      "headache",
+      "cough",
+      "swollow",
+      "digestive",
+      "count",
+      "tiredness",
+      "travel",
+      "user_email",
+      "smell"
+    ],
+    "platformData": {
+      "slots": [
+        {
+          "key": "gdb731ug",
+          "name": "query",
+          "type": {
+            "value": "Custom"
+          },
+          "color": "#457A53",
+          "inputs": [
+            "open"
+          ]
+        },
+        {
+          "key": "enkt31uw",
+          "name": "neww",
+          "type": {
+            "value": "AMAZON.Animal"
+          },
+          "color": "#5C6BC0",
+          "inputs": [
+            "Sentence"
+          ]
+        },
+        {
+          "key": "brl03ttu",
+          "name": "symptom",
+          "type": {
+            "value": "AMAZON.Animal"
+          },
+          "color": "#A086C4",
+          "inputs": [
+            "sentence"
+          ]
+        },
+        {
+          "key": "0rbx3166",
+          "name": "app",
+          "type": {
+            "value": "AMAZON.Animal"
+          },
+          "color": "#4FA9B3",
+          "inputs": []
+        },
+        {
+          "key": "1n2f316v",
+          "name": "user_symptopms",
+          "type": {
+            "value": "AMAZON.Animal"
+          },
+          "color": "#4FA9B3",
+          "inputs": []
+        },
+        {
+          "key": "jj7j310v",
+          "name": "appp",
+          "type": {
+            "value": "Airport"
+          },
+          "color": "#E26D5A",
+          "inputs": []
+        },
+        {
+          "key": "4t3p318w",
+          "name": "newwww",
+          "type": {
+            "value": "AMAZON.Animal"
+          },
+          "color": "#5C6BC0",
+          "inputs": []
+        },
+        {
+          "key": "f73l317l",
+          "name": "aaa",
+          "type": {
+            "value": "AMAZON.Animal"
+          },
+          "color": "#A086C4",
+          "inputs": []
+        },
+        {
+          "key": "p14p30s1",
+          "name": "mmm",
+          "type": {
+            "value": "Airport"
+          },
+          "color": "#A086C4",
+          "inputs": []
+        }
+      ],
+      "intents": [
+        {
+          "key": "a75r3t3v",
+          "name": "assessment",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "z15r30ex",
+          "name": "information",
+          "slots": [],
+          "inputs": [
+            {
+              "text": "What is COVID?",
+              "slots": []
+            }
+          ]
+        },
+        {
+          "key": "079n31ew",
+          "name": "opening",
+          "slots": [],
+          "inputs": []
+        },
+        {
+          "key": "wfkq31ec",
+          "name": "new",
+          "slots": [
+            {
+              "id": "enkt31uw",
+              "dialog": {
+                "prompt": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "confirm": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "utterances": [],
+                "confirmEnabled": false
+              },
+              "required": false
+            }
+          ],
+          "inputs": [
+            {
+              "text": "{{[neww].enkt31uw}}",
+              "slots": [
+                "enkt31uw"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "rakr3t54",
+          "name": "symptoms",
+          "slots": [
+            {
+              "id": "brl03ttu",
+              "dialog": {
+                "prompt": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "confirm": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "utterances": [],
+                "confirmEnabled": false
+              },
+              "required": false
+            }
+          ],
+          "inputs": [
+            {
+              "text": "{{[symptom].brl03ttu}} ",
+              "slots": [
+                "brl03ttu"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "sub431ds",
+          "name": "initprompt",
+          "slots": [
+            {
+              "id": "jj7j310v",
+              "dialog": {
+                "prompt": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "confirm": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "utterances": [],
+                "confirmEnabled": false
+              },
+              "required": false
+            }
+          ],
+          "inputs": [
+            {
+              "text": "{{[appp].jj7j310v}} ",
+              "slots": [
+                "jj7j310v"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "ak2e31l6",
+          "name": "user_symptoms",
+          "slots": [
+            {
+              "id": "1n2f316v",
+              "dialog": {
+                "prompt": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "confirm": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "utterances": [],
+                "confirmEnabled": false
+              },
+              "required": false
+            }
+          ],
+          "inputs": [
+            {
+              "text": "{{[user_symptopms].1n2f316v}} ",
+              "slots": [
+                "1n2f316v"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "yk3n31uk",
+          "name": "newww",
+          "slots": [
+            {
+              "id": "4t3p318w",
+              "dialog": {
+                "prompt": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "confirm": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "utterances": [],
+                "confirmEnabled": false
+              },
+              "required": false
+            }
+          ],
+          "inputs": [
+            {
+              "text": "{{[newwww].4t3p318w}} ",
+              "slots": [
+                "4t3p318w"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "x23k31qm",
+          "name": "aaaaaa",
+          "slots": [
+            {
+              "id": "f73l317l",
+              "dialog": {
+                "prompt": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "confirm": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "utterances": [],
+                "confirmEnabled": false
+              },
+              "required": false
+            }
+          ],
+          "inputs": [
+            {
+              "text": "{{[aaa].f73l317l}} ",
+              "slots": [
+                "f73l317l"
+              ]
+            }
+          ]
+        },
+        {
+          "key": "vy4n30rm",
+          "name": "mmmm",
+          "slots": [
+            {
+              "id": "p14p30s1",
+              "dialog": {
+                "prompt": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "confirm": [
+                  {
+                    "text": "",
+                    "slots": []
+                  }
+                ],
+                "utterances": [],
+                "confirmEnabled": false
+              },
+              "required": false
+            }
+          ],
+          "inputs": [
+            {
+              "text": "{{[mmm].p14p30s1}} ",
+              "slots": [
+                "p14p30s1"
+              ]
+            },
+            {
+              "text": "",
+              "slots": []
+            }
+          ]
+        }
+      ],
+      "settings": {
+        "events": null,
+        "customInterface": false,
+        "session": {
+          "type": "restart"
+        },
+        "repeat": "ALL",
+        "accountLinking": {
+          "type": "AUTH_CODE",
+          "scopes": [
+            ""
+          ],
+          "domains": [
+            ""
+          ],
+          "clientId": "LMbySUXssMwruyrgtu7v5YC3vExj7UoA",
+          "clientSecret": "",
+          "accessTokenUrl": "",
+          "authorizationUrl": "https://app.useanvil.com/api/v1/fill/ggrwejWLfIhagJpRiFL6.pdf",
+          "accessTokenScheme": "HTTP_BASIC",
+          "defaultTokenExpirationInSeconds": 3600
+        },
+        "error": null
+      },
+      "publishing": {
+        "summary": "Covid Consultant",
+        "invocations": [
+          "open Covid Consultant",
+          "start Covid Consultant",
+          "launch Covid Consultant"
+        ],
+        "smallIcon": "https://s3.amazonaws.com/com.getstoryflow.api.images/1615255835540-covid.png",
+        "largeIcon": "https://s3.amazonaws.com/com.getstoryflow.api.images/1615255830206-covid.png",
+        "hasAds": false,
+        "personal": false,
+        "forExport": true,
+        "invocationName": "Covid Consultant",
+        "hasPurchase": false,
+        "forChildren": false,
+        "description": "This Consultant allows you to determine if you have COVID. It will ask you questions and help you determine if you should see a doctor",
+        "instructions": "N/A",
+        "privacyPolicy": "https://creator.voiceflow.com/creator/terms?name=Maan%20Patel&skill=Covid%20Consultant&children=false",
+        "termsAndConditions": "https://creator.voiceflow.com/creator/terms?name=Maan%20Patel&skill=Covid%20Consultant&children=false",
+        "keywords": "Consultant",
+        "category": "EDUCATION_AND_REFERENCE",
+        "locales": [
+          "en-US"
+        ],
+        "updatesDescription": null
+      },
+      "status": {
+        "stage": "DEV"
+      }
+    },
+    "rootDiagramID": "60030f0c8cc35e0006e1b0af",
+    "creatorID": 53720,
+    "prototype": {
+      "data": {
+        "name": "Covid Consultant",
+        "locales": [
+          "en-US"
+        ]
+      },
+      "model": {
+        "intents": [
+          {
+            "key": "VF.NO",
+            "name": "VF.NO",
+            "inputs": [
+              {
+                "text": "no"
+              },
+              {
+                "text": "nope"
+              },
+              {
+                "text": "nay"
+              },
+              {
+                "text": "nah"
+              },
+              {
+                "text": "no way"
+              },
+              {
+                "text": "negative"
+              }
+            ]
+          },
+          {
+            "key": "VF.YES",
+            "name": "VF.YES",
+            "inputs": [
+              {
+                "text": "yes"
+              },
+              {
+                "text": "yea"
+              },
+              {
+                "text": "ok"
+              },
+              {
+                "text": "okay"
+              },
+              {
+                "text": "yup"
+              },
+              {
+                "text": "ya"
+              },
+              {
+                "text": "sure"
+              }
+            ]
+          },
+          {
+            "key": "VF.STOP",
+            "name": "VF.STOP",
+            "inputs": [
+              {
+                "text": "stop"
+              }
+            ]
+          },
+          {
+            "key": "VF.HELP",
+            "name": "VF.HELP",
+            "inputs": [
+              {
+                "text": "help"
+              },
+              {
+                "text": "help me"
+              },
+              {
+                "text": "i need help"
+              }
+            ]
+          },
+          {
+            "key": "VF.CANCEL",
+            "name": "VF.CANCEL",
+            "inputs": [
+              {
+                "text": "cancel"
+              }
+            ]
+          },
+          {
+            "key": "vy4n30rm",
+            "name": "mmmm",
+            "slots": [
+              {
+                "id": "p14p30s1",
+                "dialog": {
+                  "prompt": [
+                    {
+                      "text": "",
+                      "slots": []
+                    }
+                  ],
+                  "confirm": [
+                    {
+                      "text": "",
+                      "slots": []
+                    }
+                  ],
+                  "utterances": [],
+                  "confirmEnabled": false
+                },
+                "required": false
+              }
+            ],
+            "inputs": [
+              {
+                "text": "{{[mmm].p14p30s1}}",
+                "slots": [
+                  "p14p30s1"
+                ]
+              }
+            ]
+          }
+        ],
+        "slots": [
+          {
+            "key": "gdb731ug",
+            "name": "query",
+            "type": {
+              "value": "Custom"
+            },
+            "color": "#457A53",
+            "inputs": [
+              "open"
+            ]
+          },
+          {
+            "key": "enkt31uw",
+            "name": "neww",
+            "type": {
+              "value": "AMAZON.Animal"
+            },
+            "color": "#5C6BC0",
+            "inputs": [
+              "Sentence"
+            ]
+          },
+          {
+            "key": "brl03ttu",
+            "name": "symptom",
+            "type": {
+              "value": "AMAZON.Animal"
+            },
+            "color": "#A086C4",
+            "inputs": [
+              "sentence"
+            ]
+          },
+          {
+            "key": "0rbx3166",
+            "name": "app",
+            "type": {
+              "value": "AMAZON.Animal"
+            },
+            "color": "#4FA9B3",
+            "inputs": []
+          },
+          {
+            "key": "1n2f316v",
+            "name": "user_symptopms",
+            "type": {
+              "value": "AMAZON.Animal"
+            },
+            "color": "#4FA9B3",
+            "inputs": []
+          },
+          {
+            "key": "jj7j310v",
+            "name": "appp",
+            "type": {
+              "value": "Airport"
+            },
+            "color": "#E26D5A",
+            "inputs": []
+          },
+          {
+            "key": "4t3p318w",
+            "name": "newwww",
+            "type": {
+              "value": "AMAZON.Animal"
+            },
+            "color": "#5C6BC0",
+            "inputs": []
+          },
+          {
+            "key": "f73l317l",
+            "name": "aaa",
+            "type": {
+              "value": "AMAZON.Animal"
+            },
+            "color": "#A086C4",
+            "inputs": []
+          },
+          {
+            "key": "p14p30s1",
+            "name": "mmm",
+            "type": {
+              "value": "Airport"
+            },
+            "color": "#A086C4",
+            "inputs": []
+          }
+        ]
+      },
+      "context": {
+        "stack": [
+          {
+            "storage": {},
+            "variables": {},
+            "programID": "60030f0c8cc35e0006e1b0af"
+          }
+        ]
+      },
+      "settings": {}
+    }
+  },
+  "diagrams": {
+    "60030f0c8cc35e0006e1b0b0": {
+      "_id": "60030f0c8cc35e0006e1b0b0",
+      "name": "End Session",
+      "offsetX": 533.7263349936004,
+      "offsetY": 258.6178190687491,
+      "zoom": 59.77209357064795,
+      "variables": [],
+      "nodes": {
+        "5f9f562f11b31520c2a2a6e7": {
+          "nodeID": "5f9f562f11b31520c2a2a6e7",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e8",
+                "id": "5fde6fe15bc1c56319fad3b2"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e8": {
+          "nodeID": "5f9f562f11b31520c2a2a6e8",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Okay, this session is now ending."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6ea",
+                "id": "5fde6fe15bc1c56319fad3b3"
+              }
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e9": {
+          "nodeID": "5f9f562f11b31520c2a2a6e9",
+          "type": "block",
+          "coords": [
+            805.9688890631405,
+            120.94792332948695
+          ],
+          "data": {
+            "name": "Exit",
+            "color": "red",
+            "steps": [
+              "5f9f562f11b31520c2a2a6e8",
+              "5f9f562f11b31520c2a2a6ea"
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6ea": {
+          "nodeID": "5f9f562f11b31520c2a2a6ea",
+          "type": "exit",
+          "data": {
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "5fde6fe15bc1c56319fad3b4"
+              }
+            ]
+          }
+        }
+      },
+      "children": [],
+      "versionID": "60030f0b8cc35e0006e1b0ae",
+      "creatorID": 53720,
+      "modified": 1611001714
+    },
+    "60030f0c8cc35e0006e1b0af": {
+      "_id": "60030f0c8cc35e0006e1b0af",
+      "name": "ROOT",
+      "offsetX": 137.39868628227464,
+      "offsetY": -49.797266954674114,
+      "zoom": 40.00000000000001,
+      "variables": [],
+      "nodes": {
+        "5f9f562f11b31520c2a2a6de": {
+          "nodeID": "5f9f562f11b31520c2a2a6de",
+          "type": "start",
+          "coords": [
+            -222.18877735701165,
+            6.070455347038747
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "60030fee86af4023a87580f1",
+                "id": "5fde6fac5bc1c56319fad39b"
+              }
+            ],
+            "steps": [
+              "5f9f562f11b31520c2a2a6df",
+              "5f9f562f11b31520c2a2a6e0",
+              "5fde6fb05bc1c56319fad3a0"
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6df": {
+          "nodeID": "5f9f562f11b31520c2a2a6df",
+          "type": "command",
+          "data": {
+            "name": "Help",
+            "intent": "AMAZON.HelpIntent",
+            "diagramID": "60030f0c8cc35e0006e1b0b1",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e0": {
+          "nodeID": "5f9f562f11b31520c2a2a6e0",
+          "type": "command",
+          "data": {
+            "name": "Stop",
+            "intent": "AMAZON.StopIntent",
+            "diagramID": "60030f0c8cc35e0006e1b0b0",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "5fde6fb05bc1c56319fad3a0": {
+          "nodeID": "5fde6fb05bc1c56319fad3a0",
+          "type": "command",
+          "data": {
+            "name": "Cancel",
+            "intent": "AMAZON.CancelIntent",
+            "diagramID": "60030f0c8cc35e0006e1b0b0",
+            "mappings": [],
+            "next": null,
+            "ports": []
+          }
+        },
+        "60030fee86af4023a87580f3": {
+          "nodeID": "60030fee86af4023a87580f3",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "“Welcome to Covid Consultant. How can I help you today?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "600441ee1b046117c3fba632",
+                "id": "60030fee86af4023a87580f4"
+              }
+            ]
+          }
+        },
+        "60030fee86af4023a87580f1": {
+          "nodeID": "60030fee86af4023a87580f1",
+          "type": "block",
+          "coords": [
+            236.0744437703991,
+            -56.936866241798754
+          ],
+          "data": {
+            "name": "Welcome",
+            "color": "blue",
+            "steps": [
+              "60030fee86af4023a87580f3"
+            ]
+          }
+        },
+        "6003100486af4023a8758103": {
+          "nodeID": "6003100486af4023a8758103",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Would you like to take a covid self-assessment test?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003102686af4023a875810f",
+                "id": "6003100486af4023a8758105"
+              }
+            ]
+          }
+        },
+        "6003100486af4023a8758106": {
+          "nodeID": "6003100486af4023a8758106",
+          "type": "block",
+          "coords": [
+            2358.987155874799,
+            461.6848246502878
+          ],
+          "data": {
+            "name": "Block",
+            "color": "blue",
+            "steps": [
+              "6003100486af4023a8758103",
+              "6003102686af4023a875810f"
+            ]
+          }
+        },
+        "6003102686af4023a875810f": {
+          "nodeID": "6003102686af4023a875810f",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003102686af4023a8758112"
+              },
+              {
+                "type": "",
+                "target": "600329b2baa149eeb875e73c",
+                "id": "6003102686af4023a8758113"
+              },
+              {
+                "type": 2,
+                "target": null,
+                "id": "6003103286af4023a875811f"
+              }
+            ]
+          }
+        },
+        "60031eb1baa149eeb875e68c": {
+          "nodeID": "60031eb1baa149eeb875e68c",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "greater",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "confidence",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "0.9",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60031f04baa149eeb875e69c",
+                "id": "60031eb1baa149eeb875e68e"
+              },
+              {
+                "type": "",
+                "target": "600355b5091da576b2e2ffb1",
+                "id": "60031eb1baa149eeb875e68f"
+              }
+            ]
+          }
+        },
+        "60031f04baa149eeb875e69c": {
+          "nodeID": "60031f04baa149eeb875e69c",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "I'm sorry, I can't help you with that. Let's try again."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60030fee86af4023a87580f3",
+                "id": "60031f04baa149eeb875e69e"
+              }
+            ]
+          }
+        },
+        "60031f04baa149eeb875e69f": {
+          "nodeID": "60031f04baa149eeb875e69f",
+          "type": "block",
+          "coords": [
+            563.0445933190036,
+            857.1571071906369
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60031f04baa149eeb875e69c"
+            ]
+          }
+        },
+        "600329b2baa149eeb875e73c": {
+          "nodeID": "600329b2baa149eeb875e73c",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Welcome to the Covid-19 self-assessment. I will ask you a series of questions that will determine what actions you need to take. Please answer either yes or no to the questions. "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60032ab8baa149eeb875e74b",
+                "id": "600329b2baa149eeb875e73e"
+              }
+            ]
+          }
+        },
+        "600329b2baa149eeb875e73f": {
+          "nodeID": "600329b2baa149eeb875e73f",
+          "type": "block",
+          "coords": [
+            2846.5078566097386,
+            536.1327223012837
+          ],
+          "data": {
+            "name": "Block",
+            "color": "blue",
+            "steps": [
+              "600329b2baa149eeb875e73c"
+            ]
+          }
+        },
+        "60032ab8baa149eeb875e748": {
+          "nodeID": "60032ab8baa149eeb875e748",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Have you experienced severe difficulty in breathing in the past 14 days?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60032f92baa149eeb875e87c",
+                "id": "60032ab8baa149eeb875e74a"
+              }
+            ]
+          }
+        },
+        "60032ab8baa149eeb875e74b": {
+          "nodeID": "60032ab8baa149eeb875e74b",
+          "type": "block",
+          "coords": [
+            3387.0495056002187,
+            650.1946117245546
+          ],
+          "data": {
+            "name": "Severe Symptoms Question",
+            "color": "blue",
+            "steps": [
+              "60032ab8baa149eeb875e748",
+              "60032f92baa149eeb875e87c"
+            ]
+          }
+        },
+        "60032f92baa149eeb875e87c": {
+          "nodeID": "60032f92baa149eeb875e87c",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60032f92baa149eeb875e87f"
+              },
+              {
+                "type": "",
+                "target": "600371a31d73608cf5019ed6",
+                "id": "60032f92baa149eeb875e880"
+              },
+              {
+                "type": 2,
+                "target": "6003395cbaa149eeb875ea61",
+                "id": "60032fb8baa149eeb875e884"
+              }
+            ]
+          }
+        },
+        "6003395cbaa149eeb875ea5e": {
+          "nodeID": "6003395cbaa149eeb875ea5e",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Have you experienced severe chest pain (constant tightness or crushing sensation) in the past 14 days?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60033993baa149eeb875ea6a",
+                "id": "6003395cbaa149eeb875ea60"
+              }
+            ]
+          }
+        },
+        "6003395cbaa149eeb875ea61": {
+          "nodeID": "6003395cbaa149eeb875ea61",
+          "type": "block",
+          "coords": [
+            3915.443087038993,
+            748.2830393522388
+          ],
+          "data": {
+            "name": "Severe Symptoms Question",
+            "color": "blue",
+            "steps": [
+              "6003395cbaa149eeb875ea5e",
+              "60033993baa149eeb875ea6a"
+            ]
+          }
+        },
+        "60033993baa149eeb875ea6a": {
+          "nodeID": "60033993baa149eeb875ea6a",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60033993baa149eeb875ea6d"
+              },
+              {
+                "type": "",
+                "target": "6003722c4368dc3c8ed05167",
+                "id": "60033993baa149eeb875ea6e"
+              },
+              {
+                "type": 2,
+                "target": "60033fe5baa149eeb875ea8d",
+                "id": "600339a4baa149eeb875ea72"
+              }
+            ]
+          }
+        },
+        "60033fe5baa149eeb875ea8a": {
+          "nodeID": "60033fe5baa149eeb875ea8a",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Do you have confusion or feeling of losing consciousness?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60034208baa149eeb875ea95",
+                "id": "60033fe5baa149eeb875ea8c"
+              }
+            ]
+          }
+        },
+        "60033fe5baa149eeb875ea8d": {
+          "nodeID": "60033fe5baa149eeb875ea8d",
+          "type": "block",
+          "coords": [
+            4512.780749376656,
+            799.3220003912006
+          ],
+          "data": {
+            "name": "Severe Symptoms Question",
+            "color": "blue",
+            "steps": [
+              "60033fe5baa149eeb875ea8a",
+              "60034208baa149eeb875ea95"
+            ]
+          }
+        },
+        "60034208baa149eeb875ea95": {
+          "nodeID": "60034208baa149eeb875ea95",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": {
+              "voice": "Alexa",
+              "content": "I did not get anything, can you please repeat it?"
+            },
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60034208baa149eeb875ea98"
+              },
+              {
+                "type": "",
+                "target": "600372dd4368dc3c8ed05173",
+                "id": "60034208baa149eeb875ea99"
+              },
+              {
+                "type": 2,
+                "target": "600342c9baa149eeb875eaa2",
+                "id": "6003422dbaa149eeb875ea9d"
+              }
+            ]
+          }
+        },
+        "600342c9baa149eeb875ea9f": {
+          "nodeID": "600342c9baa149eeb875ea9f",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "What is your age?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "600342e9baa149eeb875eaaa",
+                "id": "600342c9baa149eeb875eaa1"
+              }
+            ]
+          }
+        },
+        "600342c9baa149eeb875eaa2": {
+          "nodeID": "600342c9baa149eeb875eaa2",
+          "type": "block",
+          "coords": [
+            4958.841355437263,
+            816.8977579669578
+          ],
+          "data": {
+            "name": "Age",
+            "color": "blue",
+            "steps": [
+              "600342c9baa149eeb875ea9f",
+              "600342e9baa149eeb875eaaa"
+            ]
+          }
+        },
+        "600342e9baa149eeb875eaaa": {
+          "nodeID": "600342e9baa149eeb875eaaa",
+          "type": "capture",
+          "data": {
+            "slot": "Number",
+            "variable": "input_age",
+            "reprompt": null,
+            "slotInputs": [],
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": "60036a70e45ba819b1ab08d0",
+                "id": "600342e9baa149eeb875eaad"
+              }
+            ]
+          }
+        },
+        "60034418baa149eeb875eab7": {
+          "nodeID": "60034418baa149eeb875eab7",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Have you travelled outside of Canada in the last 14 days?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60034479baa149eeb875eac2",
+                "id": "60034418baa149eeb875eab9"
+              }
+            ]
+          }
+        },
+        "60034418baa149eeb875eaba": {
+          "nodeID": "60034418baa149eeb875eaba",
+          "type": "block",
+          "coords": [
+            5635.05347664938,
+            1002.5038185730186
+          ],
+          "data": {
+            "name": "Travelling Outside of Canada",
+            "color": "blue",
+            "steps": [
+              "60034418baa149eeb875eab7",
+              "60034479baa149eeb875eac2"
+            ]
+          }
+        },
+        "60034479baa149eeb875eac2": {
+          "nodeID": "60034479baa149eeb875eac2",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": {
+              "voice": "Alexa",
+              "content": "I did not get anything, can you please repeat it?"
+            },
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60034479baa149eeb875eac5"
+              },
+              {
+                "type": "",
+                "target": "6003a157f2cfd17e036fba52",
+                "id": "60034479baa149eeb875eac6"
+              },
+              {
+                "type": 2,
+                "target": "6003453fbaa149eeb875ead1",
+                "id": "60034492baa149eeb875eaca"
+              }
+            ]
+          }
+        },
+        "6003453fbaa149eeb875eace": {
+          "nodeID": "6003453fbaa149eeb875eace",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Have you been identified as a \"close contact\" of someone who currently has COVID-19 or has related-symptoms?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "600367aae45ba819b1ab08a1",
+                "id": "6003453fbaa149eeb875ead0"
+              }
+            ]
+          }
+        },
+        "6003453fbaa149eeb875ead1": {
+          "nodeID": "6003453fbaa149eeb875ead1",
+          "type": "block",
+          "coords": [
+            6237.780749376654,
+            1159.3220003912004
+          ],
+          "data": {
+            "name": "Close Contact",
+            "color": "blue",
+            "steps": [
+              "6003453fbaa149eeb875eace",
+              "600367aae45ba819b1ab08a1"
+            ]
+          }
+        },
+        "60035589091da576b2e2ff9e": {
+          "nodeID": "60035589091da576b2e2ff9e",
+          "type": "block",
+          "coords": [
+            683.3464683771399,
+            384.5191355116829
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60031eb1baa149eeb875e68c"
+            ]
+          }
+        },
+        "600355b5091da576b2e2ffad": {
+          "nodeID": "600355b5091da576b2e2ffad",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "intent",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "assessment",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "intent",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "covid_symptom",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "intent",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "emergency_symptom",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "intent",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "random_facts",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60031f04baa149eeb875e69f",
+                "id": "600355b5091da576b2e2ffaf"
+              },
+              {
+                "type": "",
+                "target": "6003100486af4023a8758106",
+                "id": "600355b5091da576b2e2ffb0"
+              },
+              {
+                "type": 2,
+                "target": "600357a7091da576b2e2ffde",
+                "id": "60035601091da576b2e2ffb9"
+              },
+              {
+                "type": 3,
+                "target": "6003764bb9005582a28b7074",
+                "id": "60035615091da576b2e2ffbb"
+              },
+              {
+                "type": 4,
+                "target": "6003999532f07d1f5128c6b7",
+                "id": "6003566e1d487969c07803b5"
+              }
+            ]
+          }
+        },
+        "600355b5091da576b2e2ffb1": {
+          "nodeID": "600355b5091da576b2e2ffb1",
+          "type": "block",
+          "coords": [
+            1104.9907227841775,
+            679.2142654218532
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "600355b5091da576b2e2ffad"
+            ]
+          }
+        },
+        "600357a7091da576b2e2ffde": {
+          "nodeID": "600357a7091da576b2e2ffde",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "It appears that you are having symptoms that are associated with COVID-19"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003100486af4023a8758103",
+                "id": "600357a7091da576b2e2ffe0"
+              }
+            ]
+          }
+        },
+        "600357a7091da576b2e2ffe1": {
+          "nodeID": "600357a7091da576b2e2ffe1",
+          "type": "block",
+          "coords": [
+            1679.6345078039474,
+            725.7998050940791
+          ],
+          "data": {
+            "name": "Block",
+            "color": "purple",
+            "steps": [
+              "600357a7091da576b2e2ffde"
+            ]
+          }
+        },
+        "6003622a091da576b2e304d7": {
+          "nodeID": "6003622a091da576b2e304d7",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "danger",
+                "expression": {
+                  "type": "value",
+                  "value": "difficulty in breathing",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60036306e45ba819b1ab0878",
+                "id": "6003622a091da576b2e304d9"
+              }
+            ]
+          }
+        },
+        "60036306e45ba819b1ab0875": {
+          "nodeID": "60036306e45ba819b1ab0875",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Since you are experiencing {{[danger].danger}}, Public Health Ontario recommends you to please call 9-1-1 or go to nearby emergency department immediately."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60036306e45ba819b1ab0877"
+              }
+            ]
+          }
+        },
+        "60036306e45ba819b1ab0878": {
+          "nodeID": "60036306e45ba819b1ab0878",
+          "type": "block",
+          "coords": [
+            3500.784840431236,
+            1480.6554418924416
+          ],
+          "data": {
+            "name": "Block",
+            "color": "red",
+            "steps": [
+              "60036306e45ba819b1ab0875"
+            ]
+          }
+        },
+        "600367aae45ba819b1ab08a1": {
+          "nodeID": "600367aae45ba819b1ab08a1",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": {
+              "voice": "Alexa",
+              "content": "I did not get anything, can you please repeat it?"
+            },
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "600367aae45ba819b1ab08a3"
+              },
+              {
+                "type": "",
+                "target": "6003a1b3f2cfd17e036fba5e",
+                "id": "600367aae45ba819b1ab08a4"
+              },
+              {
+                "type": 2,
+                "target": "6003a1f0f2cfd17e036fba6b",
+                "id": "600367c3e45ba819b1ab08b3"
+              }
+            ]
+          }
+        },
+        "600368bde45ba819b1ab08bd": {
+          "nodeID": "600368bde45ba819b1ab08bd",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "You currently seems to have {count} COVID associated symptoms. Based on your symptoms and situation, Public Health Ontario recommends you to visit a nearby testing center to get tested for COVID-19."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003ab1af2cfd17e036fbd55",
+                "id": "600368bde45ba819b1ab08bf"
+              }
+            ]
+          }
+        },
+        "600368bde45ba819b1ab08c0": {
+          "nodeID": "600368bde45ba819b1ab08c0",
+          "type": "block",
+          "coords": [
+            7352.27419400158,
+            1753.9005539009274
+          ],
+          "data": {
+            "name": "Block",
+            "color": "red",
+            "steps": [
+              "600368bde45ba819b1ab08bd"
+            ]
+          }
+        },
+        "60036a70e45ba819b1ab08d0": {
+          "nodeID": "60036a70e45ba819b1ab08d0",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "What symptoms do you have?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003bbd9611867abc3206999",
+                "id": "60036a70e45ba819b1ab08d2"
+              }
+            ]
+          }
+        },
+        "60036a70e45ba819b1ab08d3": {
+          "nodeID": "60036a70e45ba819b1ab08d3",
+          "type": "block",
+          "coords": [
+            5238.669145789227,
+            1120.8275613803505
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60036a70e45ba819b1ab08d0"
+            ]
+          }
+        },
+        "60036aa7e45ba819b1ab08dc": {
+          "nodeID": "60036aa7e45ba819b1ab08dc",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Based on your symptoms and situation, Public Health Ontario recommends you to stay at home, practice social distancing, self isolation, and wearning PPE such as masks when you are in a public setting."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003ab1af2cfd17e036fbd58",
+                "id": "60036aa7e45ba819b1ab08de"
+              }
+            ]
+          }
+        },
+        "60036aa7e45ba819b1ab08df": {
+          "nodeID": "60036aa7e45ba819b1ab08df",
+          "type": "block",
+          "coords": [
+            7433.827741088012,
+            1437.1883656850796
+          ],
+          "data": {
+            "name": "Block",
+            "color": "green",
+            "steps": [
+              "60036aa7e45ba819b1ab08dc"
+            ]
+          }
+        },
+        "600371a31d73608cf5019ed6": {
+          "nodeID": "600371a31d73608cf5019ed6",
+          "type": "block",
+          "coords": [
+            3234.574063929318,
+            1126.8830066135856
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003622a091da576b2e304d7"
+            ]
+          }
+        },
+        "6003722c4368dc3c8ed05164": {
+          "nodeID": "6003722c4368dc3c8ed05164",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "danger",
+                "expression": {
+                  "type": "value",
+                  "value": "severe chest pain",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60036306e45ba819b1ab0878",
+                "id": "6003722c4368dc3c8ed05166"
+              }
+            ]
+          }
+        },
+        "6003722c4368dc3c8ed05167": {
+          "nodeID": "6003722c4368dc3c8ed05167",
+          "type": "block",
+          "coords": [
+            3836.770387245591,
+            1177.8586725654338
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003722c4368dc3c8ed05164"
+            ]
+          }
+        },
+        "600372dd4368dc3c8ed05170": {
+          "nodeID": "600372dd4368dc3c8ed05170",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "danger",
+                "expression": {
+                  "type": "value",
+                  "value": "losing consciousness",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60036306e45ba819b1ab0878",
+                "id": "600372dd4368dc3c8ed05172"
+              }
+            ]
+          }
+        },
+        "600372dd4368dc3c8ed05173": {
+          "nodeID": "600372dd4368dc3c8ed05173",
+          "type": "block",
+          "coords": [
+            4306.683344945025,
+            1275.2384493296795
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "600372dd4368dc3c8ed05170"
+            ]
+          }
+        },
+        "6003764bb9005582a28b7070": {
+          "nodeID": "6003764bb9005582a28b7070",
+          "type": "code",
+          "data": {
+            "code": "if (confused.confidence > 0.9) {\n  danger = \"confused\";\n};\n\nif (lose_consc.confidence > 0.9) {\n  danger = \"lost consciousness\";\n};\n\nif (diff_breath.confidence > 0.9) {\n  danger = \"difficulty breathing\";\n};\n\nif (ches_pain.confidence > 0.9) {\n  danger = \"chest pain\";\n};\n\n",
+            "ports": [
+              {
+                "type": "",
+                "target": "60036306e45ba819b1ab0875",
+                "id": "6003764bb9005582a28b7072"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "6003764bb9005582a28b7073"
+              }
+            ]
+          }
+        },
+        "6003764bb9005582a28b7074": {
+          "nodeID": "6003764bb9005582a28b7074",
+          "type": "block",
+          "coords": [
+            1712.505348586364,
+            1141.754892056128
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003764bb9005582a28b7070"
+            ]
+          }
+        },
+        "600396c49c21d4baa205c822": {
+          "nodeID": "600396c49c21d4baa205c822",
+          "type": "api",
+          "data": {
+            "url": "https://api.wit.ai/message?v=20210117&q={{[mmm].mmm}}",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "method": "GET",
+            "headers": [
+              {
+                "key": "Authorization",
+                "val": "Bearer GIZA25MFNH7ONCNRCJMDXJMGLAC2W52M"
+              }
+            ],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.intents.0.name",
+                "var": "intent"
+              },
+              {
+                "path": "response.intents.0.confidence",
+                "var": "confidence"
+              },
+              {
+                "path": "response.entities.chest_pain:chest_pain.0",
+                "var": "ches_pain"
+              },
+              {
+                "path": "response.entities.diff_breath:diff_breath.0",
+                "var": "diff_breath"
+              },
+              {
+                "path": "response.entities.confused:confused.0",
+                "var": "confused"
+              },
+              {
+                "path": "response.entities.lose_consc:lose_consc.0",
+                "var": "lose_consc"
+              },
+              {
+                "path": "response.entities.chills:chills.0",
+                "var": "chills_confidence"
+              },
+              {
+                "path": "response.entities.cough:cough.0.confidence",
+                "var": "cough_confidence"
+              },
+              {
+                "path": "response.entities.difficulty_swolling:difficulty_swolling.0.confidence",
+                "var": "swo_confidence"
+              },
+              {
+                "path": "response.entities.digestive_issue:digestive_issue.0.confidence",
+                "var": "dig_confidence"
+              },
+              {
+                "path": "response.entities.extreme_tiredness:extreme_tiredness.0.confidence",
+                "var": "tired_confidence"
+              },
+              {
+                "path": "response.entities.fever:fever.0.confidence",
+                "var": "fever_confidence"
+              },
+              {
+                "path": "response.entities.headache:headache.0.confidence",
+                "var": "head_confidence"
+              },
+              {
+                "path": "response.entities.lost_smell_or_taste:lost_smell_or_taste.0.confidence",
+                "var": "smell_confidence"
+              },
+              {
+                "path": "response.entities.muscle_aches:muscle_aches.0.confidence",
+                "var": "mus_confidence"
+              },
+              {
+                "path": "response.entities.runny_nose:runny_nose.0.confidence",
+                "var": "nose_confidence"
+              },
+              {
+                "path": "response.entities.sore_throat:sore_throat.0.confidence",
+                "var": "sore_confidence"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "ports": [
+              {
+                "type": "",
+                "target": "60039a86f2cfd17e036fb7b9",
+                "id": "600396c49c21d4baa205c823"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "600396c49c21d4baa205c824"
+              }
+            ]
+          }
+        },
+        "600396c49c21d4baa205c820": {
+          "nodeID": "600396c49c21d4baa205c820",
+          "type": "block",
+          "coords": [
+            5147.060347522023,
+            1497.3245377523617
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "600396c49c21d4baa205c822"
+            ]
+          }
+        },
+        "6003999532f07d1f5128c6b4": {
+          "nodeID": "6003999532f07d1f5128c6b4",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Did you know..."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003afd088d3157faccdaade",
+                "id": "6003999532f07d1f5128c6b6"
+              }
+            ]
+          }
+        },
+        "6003999532f07d1f5128c6b7": {
+          "nodeID": "6003999532f07d1f5128c6b7",
+          "type": "block",
+          "coords": [
+            -1105.162263666793,
+            -79.90615589490451
+          ],
+          "data": {
+            "name": "Random Facts",
+            "color": "standard",
+            "steps": [
+              "6003999532f07d1f5128c6b4"
+            ]
+          }
+        },
+        "60039a86f2cfd17e036fb7bb": {
+          "nodeID": "60039a86f2cfd17e036fb7bb",
+          "type": "code",
+          "data": {
+            "code": "if (confused.confidence > 0.9) {\n  danger = \"confused\";\n};\n\nif (lose_consc.confidence > 0.9) {\n  danger = \"lost consciousness\";\n};\n\nif (diff_breath.confidence > 0.9) {\n  danger = \"difficulty breathing\";\n};\n\nif (ches_pain.confidence > 0.9) {\n  danger = \"chest pain\";\n};\n\n",
+            "ports": [
+              {
+                "type": "",
+                "target": "60039aaff2cfd17e036fb7c9",
+                "id": "60039a86f2cfd17e036fb7bc"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "60039a86f2cfd17e036fb7bd"
+              }
+            ]
+          }
+        },
+        "60039a86f2cfd17e036fb7b9": {
+          "nodeID": "60039a86f2cfd17e036fb7b9",
+          "type": "block",
+          "coords": [
+            5522.530856590412,
+            1788.1684607472514
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60039a86f2cfd17e036fb7bb"
+            ]
+          }
+        },
+        "60039aaff2cfd17e036fb7c5": {
+          "nodeID": "60039aaff2cfd17e036fb7c5",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "danger",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "0",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60036306e45ba819b1ab0875",
+                "id": "60039aaff2cfd17e036fb7c7"
+              },
+              {
+                "type": "",
+                "target": "60039e6af2cfd17e036fb7dc",
+                "id": "60039aaff2cfd17e036fb7c8"
+              }
+            ]
+          }
+        },
+        "60039aaff2cfd17e036fb7c9": {
+          "nodeID": "60039aaff2cfd17e036fb7c9",
+          "type": "block",
+          "coords": [
+            5439.101260269236,
+            2143.8640363313875
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60039aaff2cfd17e036fb7c5"
+            ]
+          }
+        },
+        "60039e6af2cfd17e036fb7de": {
+          "nodeID": "60039e6af2cfd17e036fb7de",
+          "type": "code",
+          "data": {
+            "code": "count = 0;\nif (swo_confidence > 0.81) {\n  count = count + 1;\n  swollow = true;\n};\n\nif (dig_confidence > 0.81) {\n  digestive = true;\n  count = count + 1;\n};\n\nif (mus_confidence > 0.81) {\n  muscle_ache = true;\n  count = count + 1;\n};\n\nif (head_confidence > 0.81) {\n  headache = true;\n  count = count + 1;\n};\n\nif (nose_confidence > 0.81) {\n  runny_nose = true;\n  count = count + 1;\n};\n\nif (sore_confidence > 0.81) {\n  sore_throat = true;\n  count = count + 1;\n};\n\nif (cough_confidence > 0.81) {\n  cough = true;\n  count = count + 1;\n};\n\nif (tired_confidence > 0.81) {\n  tiredness = true;\n  count = count + 1;\n};\n\nif (fever_confidence > 0.81) {\n  fever = true;\n  count = count + 1;\n};\n\nif (chills_confidence > 0.81) {\n  chills = true;\n  count = count + 1;\n};\n\nif (smell_confidence > 0.81) {\n  smell = true;\n  count = count + 1;\n};",
+            "ports": [
+              {
+                "type": "",
+                "target": "6003a90ff2cfd17e036fbd3a",
+                "id": "60039e6af2cfd17e036fb7df"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "60039e6af2cfd17e036fb7e0"
+              }
+            ]
+          }
+        },
+        "60039e6af2cfd17e036fb7dc": {
+          "nodeID": "60039e6af2cfd17e036fb7dc",
+          "type": "block",
+          "coords": [
+            6011.210893415975,
+            2143.5513984482304
+          ],
+          "data": {
+            "name": "Var",
+            "color": "blue",
+            "steps": [
+              "60039e6af2cfd17e036fb7de"
+            ]
+          }
+        },
+        "6003a157f2cfd17e036fba4f": {
+          "nodeID": "6003a157f2cfd17e036fba4f",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "travel",
+                "expression": {
+                  "type": "value",
+                  "value": "true",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003453fbaa149eeb875ead1",
+                "id": "6003a157f2cfd17e036fba51"
+              }
+            ]
+          }
+        },
+        "6003a157f2cfd17e036fba52": {
+          "nodeID": "6003a157f2cfd17e036fba52",
+          "type": "block",
+          "coords": [
+            6059.55421043318,
+            1018.3463703502488
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003a157f2cfd17e036fba4f"
+            ]
+          }
+        },
+        "6003a1b3f2cfd17e036fba5b": {
+          "nodeID": "6003a1b3f2cfd17e036fba5b",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "close_contact",
+                "expression": {
+                  "type": "value",
+                  "value": "true",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003a1f0f2cfd17e036fba6b",
+                "id": "6003a1b3f2cfd17e036fba5d"
+              }
+            ]
+          }
+        },
+        "6003a1b3f2cfd17e036fba5e": {
+          "nodeID": "6003a1b3f2cfd17e036fba5e",
+          "type": "block",
+          "coords": [
+            6712.281483160454,
+            1347.4372794411574
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003a1b3f2cfd17e036fba5b"
+            ]
+          }
+        },
+        "6003a1f0f2cfd17e036fba67": {
+          "nodeID": "6003a1f0f2cfd17e036fba67",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "greater",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "count",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "0",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "close_contact",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "true",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60036aa7e45ba819b1ab08df",
+                "id": "6003a1f0f2cfd17e036fba69"
+              },
+              {
+                "type": "",
+                "target": "600368bde45ba819b1ab08bd",
+                "id": "6003a1f0f2cfd17e036fba6a"
+              },
+              {
+                "type": 2,
+                "target": "6003a263f2cfd17e036fba77",
+                "id": "6003a243f2cfd17e036fba74"
+              }
+            ]
+          }
+        },
+        "6003a1f0f2cfd17e036fba6b": {
+          "nodeID": "6003a1f0f2cfd17e036fba6b",
+          "type": "block",
+          "coords": [
+            6764.9543026229685,
+            1728.6129782673313
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003a1f0f2cfd17e036fba67"
+            ]
+          }
+        },
+        "6003a263f2cfd17e036fba79": {
+          "nodeID": "6003a263f2cfd17e036fba79",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "You currently seems to have no COVID associated symptoms but since you have been identified as a close contact of someone with COVID-19 or COVID-19 related symptoms, Public Health Ontario recommends you to visit a nearby testing center to get tested for COVID-19."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003ab1af2cfd17e036fbd55",
+                "id": "6003a263f2cfd17e036fba7a"
+              }
+            ]
+          }
+        },
+        "6003a263f2cfd17e036fba77": {
+          "nodeID": "6003a263f2cfd17e036fba77",
+          "type": "block",
+          "coords": [
+            6954.273681538995,
+            2064.738613165899
+          ],
+          "data": {
+            "name": "Block",
+            "color": "red",
+            "steps": [
+              "6003a263f2cfd17e036fba79"
+            ]
+          }
+        },
+        "6003a335f2cfd17e036fba83": {
+          "nodeID": "6003a335f2cfd17e036fba83",
+          "type": "code",
+          "data": {
+            "code": "if (sore_confidence > 0.85) {\n  sore_throat = true;\n  count = count + 1;\n};\n\nif (cough_confidence > 0.85) {\n  cough = true;\n  count = count + 1;\n};\n\nif (tired_confidence > 0.85) {\n  tiredness = true;\n  count = count + 1;\n};\n\nif (fever_confidence > 0.85) {\n  fever = true;\n  count = count + 1;\n};\n\nif (chills_confidence > 0.85) {\n  chills = true;\n  count = count + 1;\n};",
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003a335f2cfd17e036fba85"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "6003a335f2cfd17e036fba86"
+              }
+            ]
+          }
+        },
+        "6003a335f2cfd17e036fba87": {
+          "nodeID": "6003a335f2cfd17e036fba87",
+          "type": "block",
+          "coords": [
+            5803.210893415974,
+            2557.5513984482304
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003a335f2cfd17e036fba83"
+            ]
+          }
+        },
+        "6003a90ff2cfd17e036fbd37": {
+          "nodeID": "6003a90ff2cfd17e036fbd37",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Do you have any other symptoms? "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003a916f2cfd17e036fbd42",
+                "id": "6003a90ff2cfd17e036fbd39"
+              }
+            ]
+          }
+        },
+        "6003a90ff2cfd17e036fbd3a": {
+          "nodeID": "6003a90ff2cfd17e036fbd3a",
+          "type": "block",
+          "coords": [
+            6012.329379756347,
+            1647.5327248717647
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003a90ff2cfd17e036fbd37",
+              "6003a916f2cfd17e036fbd42"
+            ]
+          }
+        },
+        "6003a916f2cfd17e036fbd42": {
+          "nodeID": "6003a916f2cfd17e036fbd42",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": "Please answer Yes or No"
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003a916f2cfd17e036fbd45"
+              },
+              {
+                "type": "",
+                "target": "60036a70e45ba819b1ab08d0",
+                "id": "6003a916f2cfd17e036fbd46"
+              },
+              {
+                "type": 2,
+                "target": "60034418baa149eeb875eaba",
+                "id": "6003a9c1f2cfd17e036fbd4a"
+              }
+            ]
+          }
+        },
+        "6003aac1ce579f32dd482722": {
+          "nodeID": "6003aac1ce579f32dd482722",
+          "type": "api",
+          "data": {
+            "url": "https://htn2021covid19.herokuapp.com/email",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "method": "POST",
+            "headers": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "content": "{\n  \"title\": \"Covid 19 Form\",\n  \"fontSize\": 10,\n  \"textColor\": \"#333333\",\n  \"data\": {\n    \"cast24baaed0583411eb854895b4dc45078d\": {user_name},\n    \"cast3253d2b0583411eb854895b4dc45078d\": {input_age},\n    \"cast52de0dc0583411eb854895b4dc45078d\":{travel},\n    \"cast6c141050583411eb854895b4dc45078d\": false,\n    \"cast76394320583411eb854895b4dc45078d\": {fever},\n    \"cast7c2698a0583411eb854895b4dc45078d\": {chills},\n    \"cast82badc80583411eb854895b4dc45078d\": {cough},\n    \"cast88912790583411eb854895b4dc45078d\": {swollow},\n    \"cast96ea4010583411eb854895b4dc45078d\": {digestive},\n    \"casta2d27fa0583411eb854895b4dc45078d\": {headache},\n    \"castb5da2c10583411eb854895b4dc45078d\": false,\n    \"castbd485530583411eb854895b4dc45078d\": {muscle_ache},\n    \"castcc5e7c20583411eb854895b4dc45078d\": {runny_nose},\n    \"castd34748a0583411eb854895b4dc45078d\": {sore_throat},\n    \"email\":{user_email}\n  }\n}",
+            "mappings": [
+              {
+                "path": "",
+                "var": null
+              }
+            ],
+            "bodyType": "rawInput",
+            "selectedAction": "Make a POST Request",
+            "selectedIntegration": "Custom API",
+            "ports": [
+              {
+                "type": "",
+                "target": "6003ae95f2cfd17e036fbd72",
+                "id": "6003aac1ce579f32dd482724"
+              },
+              {
+                "type": "fail",
+                "target": "6003be0a611867abc3206b78",
+                "id": "6003aac1ce579f32dd482725"
+              }
+            ]
+          }
+        },
+        "6003aac1ce579f32dd482726": {
+          "nodeID": "6003aac1ce579f32dd482726",
+          "type": "block",
+          "coords": [
+            7730.5374268515325,
+            2471.2870584001216
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b0dfce579f32dd482b2a",
+              "6003aac1ce579f32dd482722"
+            ]
+          }
+        },
+        "6003ab1af2cfd17e036fbd55": {
+          "nodeID": "6003ab1af2cfd17e036fbd55",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "I have made a summary of your assessment for COVID-19 diagnosis, do you want me to send your doctor a copy"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003ab27f2cfd17e036fbd60",
+                "id": "6003ab1af2cfd17e036fbd57"
+              }
+            ]
+          }
+        },
+        "6003ab1af2cfd17e036fbd58": {
+          "nodeID": "6003ab1af2cfd17e036fbd58",
+          "type": "block",
+          "coords": [
+            7868.315599043105,
+            1924.7068362028424
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003ab1af2cfd17e036fbd55",
+              "6003ab27f2cfd17e036fbd60"
+            ]
+          }
+        },
+        "6003ab27f2cfd17e036fbd60": {
+          "nodeID": "6003ab27f2cfd17e036fbd60",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003ab27f2cfd17e036fbd63"
+              },
+              {
+                "type": "",
+                "target": "6003aac1ce579f32dd482726",
+                "id": "6003ab27f2cfd17e036fbd64"
+              },
+              {
+                "type": 2,
+                "target": "6003c0630211b5120affb83c",
+                "id": "6003abb2f2cfd17e036fbd6a"
+              }
+            ]
+          }
+        },
+        "6003ae95f2cfd17e036fbd72": {
+          "nodeID": "6003ae95f2cfd17e036fbd72",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Email is sent to {{[user_email].user_email}} "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003ae95f2cfd17e036fbd74"
+              }
+            ]
+          }
+        },
+        "6003ae95f2cfd17e036fbd75": {
+          "nodeID": "6003ae95f2cfd17e036fbd75",
+          "type": "block",
+          "coords": [
+            8215.94015135471,
+            2528.3060301911323
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003ae95f2cfd17e036fbd72"
+            ]
+          }
+        },
+        "6003afd088d3157faccdaada": {
+          "nodeID": "6003afd088d3157faccdaada",
+          "type": "random",
+          "data": {
+            "paths": 12,
+            "noDuplicates": false,
+            "ports": [
+              {
+                "type": "",
+                "target": "6003afe788d3157faccdab06",
+                "id": "6003afd088d3157faccdaadc"
+              },
+              {
+                "type": "",
+                "target": "6003afec88d3157faccdab13",
+                "id": "6003afd088d3157faccdaadd"
+              },
+              {
+                "type": 3,
+                "target": "6003aff088d3157faccdab1d",
+                "id": "6003afd888d3157faccdaae6"
+              },
+              {
+                "type": 4,
+                "target": "6003b00288d3157faccdab24",
+                "id": "6003afd988d3157faccdaae8"
+              },
+              {
+                "type": 5,
+                "target": "6003b00588d3157faccdab31",
+                "id": "6003afda88d3157faccdaaea"
+              },
+              {
+                "type": 6,
+                "target": "6003b00588d3157faccdab31",
+                "id": "6003afda88d3157faccdaaec"
+              },
+              {
+                "type": 7,
+                "target": "6003b00988d3157faccdab3b",
+                "id": "6003afdb88d3157faccdaaee"
+              },
+              {
+                "type": 7,
+                "target": "6003b01588d3157faccdab45",
+                "id": "6003afdb88d3157faccdaaf0"
+              },
+              {
+                "type": 8,
+                "target": "6003b01888d3157faccdab4f",
+                "id": "6003afdb88d3157faccdaaf2"
+              },
+              {
+                "type": 8,
+                "target": "6003b01b88d3157faccdab59",
+                "id": "6003afdb88d3157faccdaaf4"
+              },
+              {
+                "type": 9,
+                "target": "6003b02488d3157faccdab63",
+                "id": "6003afdc88d3157faccdaaf6"
+              },
+              {
+                "type": 9,
+                "target": "6003b02788d3157faccdab6d",
+                "id": "6003afdc88d3157faccdaaf8"
+              },
+              {
+                "type": 10,
+                "target": "6003b02b88d3157faccdab77",
+                "id": "6003afdc88d3157faccdaafa"
+              },
+              {
+                "type": 10,
+                "target": "6003b0d888d3157faccdab81",
+                "id": "6003afdc88d3157faccdaafb"
+              },
+              {
+                "type": 10,
+                "target": "6003b0db88d3157faccdab8b",
+                "id": "6003afdd88d3157faccdaafe"
+              },
+              {
+                "type": 10,
+                "target": "6003b0df88d3157faccdab95",
+                "id": "6003afdd88d3157faccdaaff"
+              },
+              {
+                "type": 11,
+                "target": "6003b22b5e82c8603123ca75",
+                "id": "6003afdd88d3157faccdab02"
+              },
+              {
+                "type": 11,
+                "target": "6003b22e5e82c8603123ca7f",
+                "id": "6003afdd88d3157faccdab03"
+              },
+              {
+                "type": 12,
+                "target": "6003b2ae5e82c8603123ca89",
+                "id": "6003b3385e82c8603123cab7"
+              }
+            ]
+          }
+        },
+        "6003afd088d3157faccdaade": {
+          "nodeID": "6003afd088d3157faccdaade",
+          "type": "block",
+          "coords": [
+            -1535.8593224903223,
+            -69.37380295372805
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003afd088d3157faccdaada"
+            ]
+          }
+        },
+        "6003afe788d3157faccdab06": {
+          "nodeID": "6003afe788d3157faccdab06",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2. WHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003afe788d3157faccdab08"
+              }
+            ]
+          }
+        },
+        "6003afe788d3157faccdab09": {
+          "nodeID": "6003afe788d3157faccdab09",
+          "type": "block",
+          "coords": [
+            -2624.109322490322,
+            -81.87380295372805
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003afe788d3157faccdab06"
+            ]
+          }
+        },
+        "6003afec88d3157faccdab10": {
+          "nodeID": "6003afec88d3157faccdab10",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need intensive care.  Complications leading to death may include respiratory failure, acute respiratory distress syndrome (ARDS), sepsis and septic shock, thromboembolism, and/or multiorgan failure, including injury of the heart, liver or kidneys.  In rare situations, children can develop a severe inflammatory syndrome a few weeks after infection."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003afec88d3157faccdab12"
+              }
+            ]
+          }
+        },
+        "6003afec88d3157faccdab13": {
+          "nodeID": "6003afec88d3157faccdab13",
+          "type": "block",
+          "coords": [
+            -2252.109322490322,
+            -76.62380295372807
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003afec88d3157faccdab10"
+            ]
+          }
+        },
+        "6003aff088d3157faccdab1a": {
+          "nodeID": "6003aff088d3157faccdab1a",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "People aged 60 years and over, and those with underlying medical problems like high blood pressure, heart and lung problems, diabetes, obesity or cancer, are at higher risk of developing serious illness.   However, anyone can get sick with COVID-19 and become seriously ill or die at any age."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003aff088d3157faccdab1c"
+              }
+            ]
+          }
+        },
+        "6003aff088d3157faccdab1d": {
+          "nodeID": "6003aff088d3157faccdab1d",
+          "type": "block",
+          "coords": [
+            -1884.1093224903223,
+            -80.12380295372805
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003aff088d3157faccdab1a"
+            ]
+          }
+        },
+        "6003b00288d3157faccdab24": {
+          "nodeID": "6003b00288d3157faccdab24",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Some people who have had COVID-19, whether they have needed hospitalization or not, continue to experience symptoms, including fatigue, respiratory and neurological symptoms."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b00288d3157faccdab26"
+              }
+            ]
+          }
+        },
+        "6003b00288d3157faccdab27": {
+          "nodeID": "6003b00288d3157faccdab27",
+          "type": "block",
+          "coords": [
+            -2617.9487474935336,
+            363.3770604443602
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b00288d3157faccdab24"
+            ]
+          }
+        },
+        "6003b00588d3157faccdab2e": {
+          "nodeID": "6003b00588d3157faccdab2e",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Stay safe by taking some simple precautions, such as physical distancing, wearing a mask, especially when distancing cannot be maintained, keeping rooms well ventilated, avoiding crowds and close contact, regularly cleaning your hands, and coughing into a bent elbow or tissue. Check local advice where you live and work. Do it all!"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b00588d3157faccdab30"
+              }
+            ]
+          }
+        },
+        "6003b00588d3157faccdab31": {
+          "nodeID": "6003b00588d3157faccdab31",
+          "type": "block",
+          "coords": [
+            -2261.020176064962,
+            363.9484890157884
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b00588d3157faccdab2e"
+            ]
+          }
+        },
+        "6003b00988d3157faccdab38": {
+          "nodeID": "6003b00988d3157faccdab38",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Anyone with symptoms should be tested, wherever possible. People who do not have symptoms but have had close contact with someone who is, or may be, infected may also consider testing – contact your local health guidelines and follow their guidance.    While a person is waiting for test results, they should remain isolated from others. Where testing capacity is limited, tests should first be done for those at higher risk of infection, such as health workers, and those at higher risk of severe illness such as older people, especially those living in seniors’ residences or long-term care facilities."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b00988d3157faccdab3a"
+              }
+            ]
+          }
+        },
+        "6003b00988d3157faccdab3b": {
+          "nodeID": "6003b00988d3157faccdab3b",
+          "type": "block",
+          "coords": [
+            -1902.3058903506758,
+            358.94848901578877
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b00988d3157faccdab38"
+            ]
+          }
+        },
+        "6003b01588d3157faccdab42": {
+          "nodeID": "6003b01588d3157faccdab42",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "In most situations, a molecular test is used to detect SARS-CoV-2 and confirm infection. Polymerase chain reaction (PCR) is the most commonly used molecular test. Samples are collected from the nose and/or throat with a swab. Molecular tests detect virus in the sample by amplifying viral genetic material to detectable levels. For this reason, a molecular test is used to confirm an active infection, usually within a few days of exposure and around the time that symptoms may begin. "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b01588d3157faccdab44"
+              }
+            ]
+          }
+        },
+        "6003b01588d3157faccdab45": {
+          "nodeID": "6003b01588d3157faccdab45",
+          "type": "block",
+          "coords": [
+            -2627.377318922105,
+            825.3056318729317
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b01588d3157faccdab42"
+            ]
+          }
+        },
+        "6003b01888d3157faccdab4c": {
+          "nodeID": "6003b01888d3157faccdab4c",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Rapid antigen tests (sometimes known as a rapid diagnostic test – RDT) detect viral proteins (known as antigens). Samples are collected from the nose and/or throat with a swab. These tests are cheaper than PCR and will offer results more quickly, although they are generally less accurate. These tests perform best when there is more virus circulating in the community and when sampled from an individual during the time they are most infectious. "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b01888d3157faccdab4e"
+              }
+            ]
+          }
+        },
+        "6003b01888d3157faccdab4f": {
+          "nodeID": "6003b01888d3157faccdab4f",
+          "type": "block",
+          "coords": [
+            -2274.520176064962,
+            828.1627747300744
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b01888d3157faccdab4c"
+            ]
+          }
+        },
+        "6003b01b88d3157faccdab56": {
+          "nodeID": "6003b01b88d3157faccdab56",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Antibody tests can tell us whether someone has had an infection in the past, even if they have not had symptoms. Also known as serological tests and usually done on a blood sample, these tests detect antibodies produced in response to an infection. In most people, antibodies start to develop after days to weeks and can indicate if a person has had past infection. Antibody tests cannot be used to diagnose COVID-19 in the early stages of infection or disease but can indicate whether or not someone has had the disease in the past."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b01b88d3157faccdab58"
+              }
+            ]
+          }
+        },
+        "6003b01b88d3157faccdab59": {
+          "nodeID": "6003b01b88d3157faccdab59",
+          "type": "block",
+          "coords": [
+            -1908.8058903506767,
+            821.0199175872168
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b01b88d3157faccdab56"
+            ]
+          }
+        },
+        "6003b02488d3157faccdab60": {
+          "nodeID": "6003b02488d3157faccdab60",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Both isolation and quarantine are methods of preventing the spread of COVID-19.  Quarantine is used for anyone who is a contact of someone infected with the SARS-CoV-2 virus, which causes COVID-19, whether the infected person has symptoms or not. Quarantine means that you remain separated from others because you have been exposed to the virus and you may be infected and can take place in a designated facility or at home. For COVID-19, this means staying in the facility or at home for 14 days.  Isolation is used for people with COVID-19 symptoms or who have tested positive for the virus. Being in isolation means being separated from other people, ideally in a medically facility where you can receive clinical care.  If isolation in a medical facility is not possible and you are not in a high risk group of developing severe disease, isolation can take place at home. If you have symptoms, you should remain in isolation for at least 10 days plus an additional 3 days without symptoms. If you are infected and do not develop symptoms, you should remain in isolation for 10 days from the time you test positive. "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b02488d3157faccdab62"
+              }
+            ]
+          }
+        },
+        "6003b02488d3157faccdab63": {
+          "nodeID": "6003b02488d3157faccdab63",
+          "type": "block",
+          "coords": [
+            -2668.8058903506762,
+            1311.0199175872176
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b02488d3157faccdab60"
+            ]
+          }
+        },
+        "6003b02788d3157faccdab6a": {
+          "nodeID": "6003b02788d3157faccdab6a",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "If you have been exposed to someone with COVID-19, you may become infected, even if you feel well.  After exposure to someone who has COVID-19, do the following:  Call your health care provider or COVID-19 hotline to find out where and when to get a test. Cooperate with contact-tracing procedures to stop the spread of the virus. If testing is not available, stay home and away from others for 14 days. While you are in quarantine, do not go to work, to school or to public places. Ask someone to bring you supplies. Keep at least a 1-metre distance from others, even from your family members. Wear a medical mask to protect others, including if/when you need to seek medical care. Clean your hands frequently. Stay in a separate room from other family members, and if not possible, wear a medical mask. Keep the room well-ventilated. If you share a room, place beds at least 1 metre apart. Monitor yourself for any symptoms for 14 days."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b02788d3157faccdab6c"
+              }
+            ]
+          }
+        },
+        "6003b02788d3157faccdab6d": {
+          "nodeID": "6003b02788d3157faccdab6d",
+          "type": "block",
+          "coords": [
+            -2300.234461779248,
+            1309.5913461586458
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b02788d3157faccdab6a"
+            ]
+          }
+        },
+        "6003b02b88d3157faccdab74": {
+          "nodeID": "6003b02b88d3157faccdab74",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "The time from exposure to COVID-19 to the moment when symptoms begin is, on average, 5-6 days and can range from 1-14 days. This is why people who have been exposed to the virus are advised to remain at home and stay away from others, for 14 days, in order to prevent the spread of the virus, especially where testing is not easily available."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b02b88d3157faccdab76"
+              }
+            ]
+          }
+        },
+        "6003b02b88d3157faccdab77": {
+          "nodeID": "6003b02b88d3157faccdab77",
+          "type": "block",
+          "coords": [
+            -1935.9487474935336,
+            1308.1627747300759
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b02b88d3157faccdab74"
+            ]
+          }
+        },
+        "6003b0d888d3157faccdab7e": {
+          "nodeID": "6003b0d888d3157faccdab7e",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Yes. There are three COVID-19 vaccines for which certain national regulatory authorities have authorized the use. None have yet received WHO EUL/PQ authorization but we expect an assessment on the Pfizer vaccine by the end of December and for some other candidates soon thereafter.   Large studies of 5 vaccine candidates efficacy and safety results, including these three (and for Moderna and AstraZeneca), have been publicly reported  through press releases but only one (AstraZeneca) has published results in the peer reviewed literature.  , We expect more such reports in the near future.  It is likely that additional candidates will be submitted to regulatory authorities for approval. There are many potential COVID-19 vaccine candidates currently in development.  Once vaccines are demonstrated to be safe and efficacious, they must be approved by national regulators, manufactured to exacting standards, and distributed. WHO is working with partners around the world to help coordinate key steps in this process, including to facilitate equitable access to safe and effective COVID-19 vaccines for the billions of people who will need them."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b0d888d3157faccdab80"
+              }
+            ]
+          }
+        },
+        "6003b0d888d3157faccdab81": {
+          "nodeID": "6003b0d888d3157faccdab81",
+          "type": "block",
+          "coords": [
+            -2653.091604636391,
+            2483.8770604443607
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b0d888d3157faccdab7e"
+            ]
+          }
+        },
+        "6003b0db88d3157faccdab88": {
+          "nodeID": "6003b0db88d3157faccdab88",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "If you have any symptoms suggestive of COVID-19, call your health care provider or COVID-19 hotline for instructions and find out when and where to get a test, stay at home for 14 days away from others and monitor your health.  If you have shortness of breath or pain or pressure in the chest, seek medical attention at a health facility immediately. Call your health care provider or hotline in advance for direction to the right health facility.  If you live in an area with malaria or dengue fever, seek medical care if you have a fever.  If local guidance recommends visiting a medical centre for testing, assessment or isolation, wear a medical mask while travelling to and from the facility and during medical care. Also keep at least a 1-metre distance from other people and avoid touching surfaces with your hands.  This applies to adults and children."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b0db88d3157faccdab8a"
+              }
+            ]
+          }
+        },
+        "6003b0db88d3157faccdab8b": {
+          "nodeID": "6003b0db88d3157faccdab8b",
+          "type": "block",
+          "coords": [
+            -2317.377318922105,
+            2551.019917587218
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b0db88d3157faccdab88"
+            ]
+          }
+        },
+        "6003b0df88d3157faccdab92": {
+          "nodeID": "6003b0df88d3157faccdab92",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Scientists around the world are working to find and develop treatments for COVID-19.  Optimal supportive care includes oxygen for severely ill patients and those who are at risk for severe disease and more advanced respiratory support such as ventilation for patients who are critically ill."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b0df88d3157faccdab94"
+              }
+            ]
+          }
+        },
+        "6003b0df88d3157faccdab95": {
+          "nodeID": "6003b0df88d3157faccdab95",
+          "type": "block",
+          "coords": [
+            -1944.520176064962,
+            2551.0199175872176
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b0df88d3157faccdab92"
+            ]
+          }
+        },
+        "6003b0dfce579f32dd482b2a": {
+          "nodeID": "6003b0dfce579f32dd482b2a",
+          "type": "set",
+          "data": {
+            "sets": [
+              {
+                "variable": "user_email",
+                "expression": {
+                  "type": "value",
+                  "value": "\"patel.maan14@gmail.com\"",
+                  "depth": 0
+                }
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "6003aac1ce579f32dd482722",
+                "id": "6003b0dfce579f32dd482b2d"
+              }
+            ]
+          }
+        },
+        "6003b22b5e82c8603123ca72": {
+          "nodeID": "6003b22b5e82c8603123ca72",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "The CDC recommends wearing masks in public when other social distancing measures are difficult to maintain.  The FDA has authorized the emergency use of face masks, including cloth face coverings, that meet certain criteria for use as source control by the general public and health care personnel in accordance with CDC recommendations during the COVID-19 public health emergency. The FDA also regulates other medical devices, including personal protective equipment (PPE) such as surgical masks and N95 respirators. The CDC recommends that PPE should be reserved for use by health care workers, first responders, and other frontline workers whose jobs put them at much greater risk of acquiring COVID-19."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b22b5e82c8603123ca74"
+              }
+            ]
+          }
+        },
+        "6003b22b5e82c8603123ca75": {
+          "nodeID": "6003b22b5e82c8603123ca75",
+          "type": "block",
+          "coords": [
+            -3284.069835846752,
+            -0.2804016018185394
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b22b5e82c8603123ca72"
+            ]
+          }
+        },
+        "6003b22e5e82c8603123ca7c": {
+          "nodeID": "6003b22e5e82c8603123ca7c",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "The best way to prevent the spread of infections and decrease the risk of getting sick is by washing your hands with plain soap and water, advises the CDC. Washing hands often with soap and water for at least 20 seconds is essential, especially after going to the bathroom; before eating; and after coughing, sneezing, or blowing one’s nose. If soap and water are not available, CDC recommends consumers use an alcohol-based hand sanitizer that contains at least 60% alcohol. "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b22e5e82c8603123ca7e"
+              }
+            ]
+          }
+        },
+        "6003b22e5e82c8603123ca7f": {
+          "nodeID": "6003b22e5e82c8603123ca7f",
+          "type": "block",
+          "coords": [
+            -3266.069835846752,
+            809.7195983981816
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b22e5e82c8603123ca7c"
+            ]
+          }
+        },
+        "6003b2ae5e82c8603123ca86": {
+          "nodeID": "6003b2ae5e82c8603123ca86",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "E-cigarette use can expose the lungs to toxic chemicals, but whether those exposures increase the risk of COVID-19 or the severity of COVID-19 outcomes is not known. However, many e-cigarette users are current or former smokers, and cigarette smoking increases the risk of respiratory infections, including pneumonia."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003b2ae5e82c8603123ca88"
+              }
+            ]
+          }
+        },
+        "6003b2ae5e82c8603123ca89": {
+          "nodeID": "6003b2ae5e82c8603123ca89",
+          "type": "block",
+          "coords": [
+            -3646.069835846752,
+            -202.28040160181857
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003b2ae5e82c8603123ca86"
+            ]
+          }
+        },
+        "6003bbd9611867abc3206995": {
+          "nodeID": "6003bbd9611867abc3206995",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "vy4n30rm",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003bbd9611867abc3206997"
+              },
+              {
+                "type": "",
+                "target": "600396c49c21d4baa205c822",
+                "id": "6003bbd9611867abc3206998"
+              }
+            ]
+          }
+        },
+        "6003bbd9611867abc3206999": {
+          "nodeID": "6003bbd9611867abc3206999",
+          "type": "block",
+          "coords": [
+            4868.591398377433,
+            1260.80761808966
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003bbd9611867abc3206995"
+            ]
+          }
+        },
+        "6003be0a611867abc3206b75": {
+          "nodeID": "6003be0a611867abc3206b75",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Email could not be sent"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003be0a611867abc3206b77"
+              }
+            ]
+          }
+        },
+        "6003be0a611867abc3206b78": {
+          "nodeID": "6003be0a611867abc3206b78",
+          "type": "block",
+          "coords": [
+            8342.128480192609,
+            2903.774583720455
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003be0a611867abc3206b75"
+            ]
+          }
+        },
+        "6003c0630211b5120affb83c": {
+          "nodeID": "6003c0630211b5120affb83c",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Sure, no problem."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "6003c0630211b5120affb83e"
+              }
+            ]
+          }
+        },
+        "6003c0630211b5120affb83f": {
+          "nodeID": "6003c0630211b5120affb83f",
+          "type": "block",
+          "coords": [
+            8638.829261651292,
+            2112.2723758403636
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6003c0630211b5120affb83c"
+            ]
+          }
+        },
+        "600441ee1b046117c3fba632": {
+          "nodeID": "600441ee1b046117c3fba632",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "vy4n30rm",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "600441ee1b046117c3fba634"
+              },
+              {
+                "type": "",
+                "target": "6004428d1b046117c3fba640",
+                "id": "600441ee1b046117c3fba635"
+              }
+            ]
+          }
+        },
+        "600441ee1b046117c3fba636": {
+          "nodeID": "600441ee1b046117c3fba636",
+          "type": "block",
+          "coords": [
+            748.9302343309859,
+            -5.566750229240422
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "600441ee1b046117c3fba632"
+            ]
+          }
+        },
+        "6004428d1b046117c3fba642": {
+          "nodeID": "6004428d1b046117c3fba642",
+          "type": "api",
+          "data": {
+            "url": "https://api.wit.ai/message?v=20210117&q={{[mmm].mmm}}",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "method": "GET",
+            "headers": [
+              {
+                "key": "Authorization",
+                "val": "Bearer GIZA25MFNH7ONCNRCJMDXJMGLAC2W52M"
+              }
+            ],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.intents.0.name",
+                "var": "intent"
+              },
+              {
+                "path": "response.intents.0.confidence",
+                "var": "confidence"
+              },
+              {
+                "path": "response.entities.chest_pain:chest_pain.0",
+                "var": "ches_pain"
+              },
+              {
+                "path": "response.entities.diff_breath:diff_breath.0",
+                "var": "diff_breath"
+              },
+              {
+                "path": "response.entities.confused:confused.0",
+                "var": "confused"
+              },
+              {
+                "path": "response.entities.lose_consc:lose_consc.0",
+                "var": "lose_consc"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "ports": [
+              {
+                "type": "",
+                "target": "60035589091da576b2e2ff9e",
+                "id": "6004428d1b046117c3fba643"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "6004428d1b046117c3fba644"
+              }
+            ]
+          }
+        },
+        "6004428d1b046117c3fba640": {
+          "nodeID": "6004428d1b046117c3fba640",
+          "type": "block",
+          "coords": [
+            231.02405489260033,
+            272.73613536620314
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "6004428d1b046117c3fba642"
+            ]
+          }
+        },
+        "60555cb5ccd79b5fa3cb46b0": {
+          "nodeID": "60555cb5ccd79b5fa3cb46b0",
+          "type": "capture",
+          "data": {
+            "slot": null,
+            "variable": "user_email",
+            "reprompt": null,
+            "slotInputs": [],
+            "chips": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60555cb5ccd79b5fa3cb46b2"
+              }
+            ]
+          }
+        },
+        "60555d3bccd79b5fa3cb46dc": {
+          "nodeID": "60555d3bccd79b5fa3cb46dc",
+          "type": "prompt",
+          "data": {
+            "ports": [],
+            "reprompt": null,
+            "noMatches": {
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "chips": null
+          }
+        },
+        "60555d3bccd79b5fa3cb46de": {
+          "nodeID": "60555d3bccd79b5fa3cb46de",
+          "type": "block",
+          "coords": [
+            7801.507524995075,
+            3125.9045536542462
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60555d3bccd79b5fa3cb46dc"
+            ]
+          }
+        },
+        "60555e7bccd79b5fa3cb46e4": {
+          "nodeID": "60555e7bccd79b5fa3cb46e4",
+          "type": "block",
+          "coords": [
+            7103.3363049322115,
+            2616.213156853786
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60555cb5ccd79b5fa3cb46b0"
+            ]
+          }
+        }
+      },
+      "children": [
+        "60030f0c8cc35e0006e1b0b1",
+        "60030f0c8cc35e0006e1b0b0"
+      ],
+      "versionID": "60030f0b8cc35e0006e1b0ae",
+      "creatorID": 53720,
+      "modified": 1616208680
+    },
+    "60030f0c8cc35e0006e1b0b1": {
+      "_id": "60030f0c8cc35e0006e1b0b1",
+      "name": "Help User",
+      "offsetX": 196.5723910133667,
+      "offsetY": 143.32399142840148,
+      "zoom": 76.41405779564307,
+      "variables": [],
+      "nodes": {
+        "5f9f562f11b31520c2a2a6e1": {
+          "nodeID": "5f9f562f11b31520c2a2a6e1",
+          "type": "start",
+          "coords": [
+            360,
+            120
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e2",
+                "id": "5fde75904a001a20aa671626"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e2": {
+          "nodeID": "5f9f562f11b31520c2a2a6e2",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "You said help. Do you want to continue?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e4",
+                "id": "5fde75904a001a20aa671627"
+              }
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e3": {
+          "nodeID": "5f9f562f11b31520c2a2a6e3",
+          "type": "block",
+          "coords": [
+            808.6506721313523,
+            121.24568139701532
+          ],
+          "data": {
+            "name": "Help Message",
+            "color": "standard",
+            "steps": [
+              "5f9f562f11b31520c2a2a6e2",
+              "5f9f562f11b31520c2a2a6e4"
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e4": {
+          "nodeID": "5f9f562f11b31520c2a2a6e4",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": "Do you want to continue?"
+                },
+                {
+                  "voice": "Alexa",
+                  "content": "Please say yes or no."
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "AMAZON.YesIntent",
+                "mappings": []
+              },
+              {
+                "intent": "AMAZON.NoIntent",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "5fde75904a001a20aa671628"
+              },
+              {
+                "type": "",
+                "target": null,
+                "id": "5fde75904a001a20aa671629"
+              },
+              {
+                "type": 2,
+                "target": "5f9f562f11b31520c2a2a6e6",
+                "id": "5fde75904a001a20aa67162a"
+              }
+            ]
+          }
+        },
+        "5f9f562f11b31520c2a2a6e5": {
+          "nodeID": "5f9f562f11b31520c2a2a6e5",
+          "type": "exit",
+          "data": {
+            "ports": []
+          }
+        },
+        "5f9f562f11b31520c2a2a6e6": {
+          "nodeID": "5f9f562f11b31520c2a2a6e6",
+          "type": "block",
+          "coords": [
+            1295.0066750587603,
+            408.4923354011805
+          ],
+          "data": {
+            "name": "Exit",
+            "color": "red",
+            "steps": [
+              "5fde75c44a001a20aa67166d",
+              "5f9f562f11b31520c2a2a6e5"
+            ]
+          }
+        },
+        "5fde75c44a001a20aa67166d": {
+          "nodeID": "5fde75c44a001a20aa67166d",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "Bye for now."
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "5f9f562f11b31520c2a2a6e5",
+                "id": "5fde75c44a001a20aa671670"
+              }
+            ]
+          }
+        }
+      },
+      "children": [],
+      "versionID": "60030f0b8cc35e0006e1b0ae",
+      "creatorID": 53720,
+      "modified": 1611001712
+    },
+    "60030f6fc2bfef001b823d46": {
+      "_id": "60030f6fc2bfef001b823d46",
+      "offsetX": 738.916612483903,
+      "offsetY": 109.28939594088237,
+      "zoom": 47.904332573353926,
+      "variables": [],
+      "children": [],
+      "nodes": {
+        "60030f6f86af4023a87580c6": {
+          "nodeID": "60030f6f86af4023a87580c6",
+          "type": "start",
+          "coords": [
+            -955.7339558435839,
+            94.47515970202224
+          ],
+          "data": {
+            "name": "Start",
+            "color": "standard",
+            "ports": [
+              {
+                "type": "",
+                "target": "60036175920de1dcd19a5349",
+                "id": "60030f6f86af4023a87580c7"
+              }
+            ],
+            "steps": []
+          }
+        },
+        "60036175920de1dcd19a534c": {
+          "nodeID": "60036175920de1dcd19a534c",
+          "type": "interaction",
+          "data": {
+            "name": "Choice",
+            "else": {
+              "type": "reprompt",
+              "randomize": false,
+              "reprompts": [
+                {
+                  "voice": "Alexa",
+                  "content": ""
+                }
+              ]
+            },
+            "choices": [
+              {
+                "intent": "wfkq31ec",
+                "mappings": []
+              }
+            ],
+            "reprompt": null,
+            "ports": [
+              {
+                "type": "",
+                "target": null,
+                "id": "60036175920de1dcd19a534d"
+              },
+              {
+                "type": "",
+                "target": "60036175920de1dcd19a532a",
+                "id": "60036175920de1dcd19a534e"
+              }
+            ]
+          }
+        },
+        "60036175920de1dcd19a5349": {
+          "nodeID": "60036175920de1dcd19a5349",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "“Welcome to Covid Consultant. How can I help you today?"
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60036175920de1dcd19a534c",
+                "id": "60036175920de1dcd19a534a"
+              }
+            ]
+          }
+        },
+        "60036175920de1dcd19a5340": {
+          "nodeID": "60036175920de1dcd19a5340",
+          "type": "api",
+          "data": {
+            "url": "https://api.wit.ai/message?v=20210117&q={{[neww].neww}}",
+            "body": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "params": [
+              {
+                "key": "",
+                "val": ""
+              }
+            ],
+            "method": "GET",
+            "headers": [
+              {
+                "key": "Authorization",
+                "val": "Bearer GIZA25MFNH7ONCNRCJMDXJMGLAC2W52M"
+              }
+            ],
+            "content": "",
+            "mappings": [
+              {
+                "path": "response.intents.0.name",
+                "var": "intent"
+              },
+              {
+                "path": "response.intents.0.confidence",
+                "var": "confidence"
+              }
+            ],
+            "bodyType": "formData",
+            "selectedAction": "Make a GET Request",
+            "selectedIntegration": "Custom API",
+            "ports": [
+              {
+                "type": "",
+                "target": "60036175920de1dcd19a5328",
+                "id": "60036175920de1dcd19a5341"
+              },
+              {
+                "type": "fail",
+                "target": null,
+                "id": "60036175920de1dcd19a5342"
+              }
+            ]
+          }
+        },
+        "60036175920de1dcd19a533c": {
+          "nodeID": "60036175920de1dcd19a533c",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "greater",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "confidence",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "0.9",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60036175920de1dcd19a5339",
+                "id": "60036175920de1dcd19a533d"
+              },
+              {
+                "type": "",
+                "target": "60036175920de1dcd19a5324",
+                "id": "60036175920de1dcd19a533e"
+              }
+            ]
+          }
+        },
+        "60036175920de1dcd19a5339": {
+          "nodeID": "60036175920de1dcd19a5339",
+          "type": "speak",
+          "data": {
+            "randomize": false,
+            "dialogs": [
+              {
+                "voice": "Alexa",
+                "content": "I'm sorry, I did not understand how that is realted to COVID-19.   "
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60036175920de1dcd19a5330",
+                "id": "60036175920de1dcd19a533a"
+              }
+            ]
+          }
+        },
+        "60036175920de1dcd19a5332": {
+          "nodeID": "60036175920de1dcd19a5332",
+          "type": "if",
+          "data": {
+            "expressions": [
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "intent",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "assessment",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "intent",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "covid_symptom",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "intent",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "emergency_symptom",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              },
+              {
+                "type": "equals",
+                "value": [
+                  {
+                    "type": "variable",
+                    "value": "intent",
+                    "depth": 1
+                  },
+                  {
+                    "type": "value",
+                    "value": "test_center",
+                    "depth": 1
+                  }
+                ],
+                "depth": 0
+              }
+            ],
+            "ports": [
+              {
+                "type": "",
+                "target": "60036175920de1dcd19a5326",
+                "id": "60036175920de1dcd19a5333"
+              },
+              {
+                "type": "",
+                "target": null,
+                "id": "60036175920de1dcd19a5334"
+              },
+              {
+                "type": 2,
+                "target": null,
+                "id": "60036175920de1dcd19a5335"
+              },
+              {
+                "type": 3,
+                "target": null,
+                "id": "60036175920de1dcd19a5336"
+              },
+              {
+                "type": 4,
+                "target": null,
+                "id": "60036175920de1dcd19a5337"
+              }
+            ]
+          }
+        },
+        "60036175920de1dcd19a5330": {
+          "nodeID": "60036175920de1dcd19a5330",
+          "type": "block",
+          "coords": [
+            -434.55497673283287,
+            81.91463349825845
+          ],
+          "data": {
+            "name": "Welcome",
+            "color": "blue",
+            "steps": [
+              "60036175920de1dcd19a5349",
+              "60036175920de1dcd19a534c"
+            ]
+          }
+        },
+        "60036175920de1dcd19a532a": {
+          "nodeID": "60036175920de1dcd19a532a",
+          "type": "block",
+          "coords": [
+            42.786856221975114,
+            52.64023292474698
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60036175920de1dcd19a5340"
+            ]
+          }
+        },
+        "60036175920de1dcd19a5328": {
+          "nodeID": "60036175920de1dcd19a5328",
+          "type": "block",
+          "coords": [
+            531.92035711538,
+            337.8191015414492
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60036175920de1dcd19a533c"
+            ]
+          }
+        },
+        "60036175920de1dcd19a5326": {
+          "nodeID": "60036175920de1dcd19a5326",
+          "type": "block",
+          "coords": [
+            -49.241238571672184,
+            646.8108959063884
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60036175920de1dcd19a5339"
+            ]
+          }
+        },
+        "60036175920de1dcd19a5324": {
+          "nodeID": "60036175920de1dcd19a5324",
+          "type": "block",
+          "coords": [
+            911.863178977293,
+            337.6329370402142
+          ],
+          "data": {
+            "name": "Block",
+            "color": "standard",
+            "steps": [
+              "60036175920de1dcd19a5332"
+            ]
+          }
+        }
+      },
+      "versionID": "60030f0b8cc35e0006e1b0ae",
+      "creatorID": 53718,
+      "name": "Welcome",
+      "modified": 1611001710
+    }
+  }
+}
